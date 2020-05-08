@@ -3,10 +3,7 @@
 - Monsters spawning in waves and drop things on death
 - Give 5 perks (earned or picked up)
   1. invincibility
-  2. Speed boost
-  3. 
-  4. 
-  5. 
+  2. Speed boost 
 - Keep track of highscore
 - Weapons should be upgradable (at least 3 levels per weapon)
   - Guns do more damage as waves progress
