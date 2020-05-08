@@ -1119,6 +1119,3 @@ extern int zombie_kills;
 extern int high_score;
 
 extern void spawn_wave(int wave);
-extern void spawn_hard_zombies(int wave);
-
-extern void drop_item(edict_t *ent);

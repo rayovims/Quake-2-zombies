@@ -1189,18 +1189,35 @@ void soldier_die (edict_t *self, edict_t *inflictor, edict_t *attacker, int dama
 
 	if (game_flag == 1) {
 
-		//int random = rand() % 2;
-
 		//read from file to get highscore		
 		fpr = fopen("highscore.txt", "r");
 		fscanf(fpr, "%d", &high_score);
 		fclose(fpr);
+
+		if (zombie_kills == 1) {
+			Drop_Item(self, &itemlist[9]);
+			Drop_Item(self, &itemlist[18]);
+			Drop_Item(self, &itemlist[19]);
+			Drop_Item(self, &itemlist[20]);
+		}
 		
 		if (self->deadflag == DEAD_DEAD) {
 			zombie_kills++; //on every kill update zombie kills
-			//if (random == 0) {
-			drop_item(self);
-			//}
+
+			int random = rand() % 7;
+			if(random == 1 || random == 0){
+				Drop_Item(self, &itemlist[(rand() % 6) + 1]);
+			}
+			if(random == 2) {
+				SP_item_health_mega(self);
+			}
+			if(random == 4) {
+				SP_item_health_small(self);
+			}
+			if (random == 6) {
+				SP_item_health(self);
+			}
+
 		}
 
 		if (zombie_kills == 1) {
@@ -1224,7 +1241,11 @@ void soldier_die (edict_t *self, edict_t *inflictor, edict_t *attacker, int dama
 			wave_count++;
 		}
 		if (zombie_kills == 15) {
-			spawn_wave(2);
+			spawn_wave(25);
+			wave_count++;
+		}
+		if (zombie_kills > 23) {
+			spawn_wave(35);
 			wave_count++;
 		}
 
@@ -1383,13 +1404,4 @@ void spawn_wave(int wave){
 		}
 		
 	}
-}
-
-void drop_item(edict_t *ent) {
-	int n = (rand() % 10) + 1;
-
-	if (n == 1) { SP_item_health_small(ent); }
-	else if (n == 2 || n == 3) { SP_item_health_large(ent); }
-	else if (n >= 4 && n <= 6) { SP_item_health_mega(ent); }
-	else if (n >= 7 && n <= 10) { SP_item_health(ent); }
 }

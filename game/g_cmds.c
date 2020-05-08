@@ -24,6 +24,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 game_flag = 0;
 
 
+
 char *ClientTeam (edict_t *ent)
 {
 	char		*p;
@@ -910,19 +911,16 @@ void Cmd_BFG_F(edict_t *ent)
 }
 
 void start_waves(edict_t *ent) {
+
 	gi.cprintf(ent, PRINT_HIGH, "%s", "ZOMBIES ARE COMING!\n");
 	zombie_kills = 0;
 	game_flag = 1;
 	wave_count = 1;
 	high_score = 0;
 
-	int num = 0;
-
 	FILE *pFile;
 	pFile = fopen("highscore.txt", "r");
-	gi.cprintf(ent, PRINT_HIGH, "FILE OPENED\n");
-	fscanf(pFile, "%d", &num);
-	gi.cprintf(ent, PRINT_HIGH, "NUM = %d\n", num);
+	fscanf(pFile, "%d", &high_score);
 	fclose(pFile);
 
 	spawn_wave(1);

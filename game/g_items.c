@@ -1257,7 +1257,7 @@ gitem_t	itemlist[] =
 /* precache */ ""
 	},
 
-/*QUAKED item_power_shield (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED item_power_shield (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 6
 */
 	{
 		"item_power_shield",
@@ -1285,7 +1285,7 @@ gitem_t	itemlist[] =
 	// WEAPONS 
 	//
 
-/* weapon_blaster (.3 .3 1) (-16 -16 -16) (16 16 16)
+/* weapon_blaster (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 7
 always owned, never in the world
 */
 	{
@@ -1309,7 +1309,7 @@ always owned, never in the world
 /* precache */ "weapons/blastf1a.wav misc/lasfly.wav"
 	},
 
-/*QUAKED weapon_shotgun (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_shotgun (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 8
 */
 	{
 		"weapon_shotgun", 
@@ -1332,7 +1332,7 @@ always owned, never in the world
 /* precache */ "weapons/shotgf1b.wav weapons/shotgr1b.wav"
 	},
 
-/*QUAKED weapon_supershotgun (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_supershotgun (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 9
 */
 	{
 		"weapon_supershotgun", 
@@ -1355,7 +1355,7 @@ always owned, never in the world
 /* precache */ "weapons/sshotf1b.wav"
 	},
 
-/*QUAKED weapon_machinegun (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_machinegun (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 10
 */
 	{
 		"weapon_machinegun", 
@@ -1378,7 +1378,7 @@ always owned, never in the world
 /* precache */ "weapons/machgf1b.wav weapons/machgf2b.wav weapons/machgf3b.wav weapons/machgf4b.wav weapons/machgf5b.wav"
 	},
 
-/*QUAKED weapon_chaingun (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_chaingun (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 11
 */
 	{
 		"weapon_chaingun", 
@@ -1401,7 +1401,7 @@ always owned, never in the world
 /* precache */ "weapons/chngnu1a.wav weapons/chngnl1a.wav weapons/machgf3b.wav` weapons/chngnd1a.wav"
 	},
 
-/*QUAKED ammo_grenades (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED ammo_grenades (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 12
 */
 	{
 		"ammo_grenades",
@@ -1424,7 +1424,7 @@ always owned, never in the world
 /* precache */ "weapons/hgrent1a.wav weapons/hgrena1b.wav weapons/hgrenc1b.wav weapons/hgrenb1a.wav weapons/hgrenb2a.wav "
 	},
 
-/*QUAKED weapon_grenadelauncher (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_grenadelauncher (.3 .3 1) (-16 -16 -16) (16 16 16) index 13
 */
 	{
 		"weapon_grenadelauncher",
@@ -1447,7 +1447,7 @@ always owned, never in the world
 /* precache */ "models/objects/grenade/tris.md2 weapons/grenlf1a.wav weapons/grenlr1b.wav weapons/grenlb1b.wav"
 	},
 
-/*QUAKED weapon_rocketlauncher (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_rocketlauncher (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 14
 */
 	{
 		"weapon_rocketlauncher",
@@ -1470,7 +1470,7 @@ always owned, never in the world
 /* precache */ "models/objects/rocket/tris.md2 weapons/rockfly.wav weapons/rocklf1a.wav weapons/rocklr1b.wav models/objects/debris2/tris.md2"
 	},
 
-/*QUAKED weapon_hyperblaster (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_hyperblaster (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 15
 */
 	{
 		"weapon_hyperblaster", 
@@ -1493,7 +1493,7 @@ always owned, never in the world
 /* precache */ "weapons/hyprbu1a.wav weapons/hyprbl1a.wav weapons/hyprbf1a.wav weapons/hyprbd1a.wav misc/lasfly.wav"
 	},
 
-/*QUAKED weapon_railgun (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_railgun (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 16
 */
 	{
 		"weapon_railgun", 
@@ -1516,7 +1516,7 @@ always owned, never in the world
 /* precache */ "weapons/rg_hum.wav"
 	},
 
-/*QUAKED weapon_bfg (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED weapon_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 17
 */
 	{
 		"weapon_bfg",
@@ -1543,7 +1543,7 @@ always owned, never in the world
 	// AMMO ITEMS
 	//
 
-/*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 18
 */
 	{
 		"ammo_shells",
@@ -1566,7 +1566,7 @@ always owned, never in the world
 /* precache */ ""
 	},
 
-/*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 19
 */
 	{
 		"ammo_bullets",
@@ -1589,7 +1589,7 @@ always owned, never in the world
 /* precache */ ""
 	},
 
-/*QUAKED ammo_cells (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED ammo_cells (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 20
 */
 	{
 		"ammo_cells",
@@ -1612,7 +1612,7 @@ always owned, never in the world
 /* precache */ ""
 	},
 
-/*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 21
 */
 	{
 		"ammo_rockets",
@@ -1635,7 +1635,7 @@ always owned, never in the world
 /* precache */ ""
 	},
 
-/*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 22
 */
 	{
 		"ammo_slugs",
@@ -1662,7 +1662,7 @@ always owned, never in the world
 	//
 	// POWERUP ITEMS
 	//
-/*QUAKED item_quad (.3 .3 1) (-16 -16 -16) (16 16 16)
+/*QUAKED item_quad (.3 .3 1) (-16 -16 -16) (16 16 16) INDEX 23
 */
 	{
 		"item_quad", 
